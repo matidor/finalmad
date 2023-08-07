@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'NewPanamSkyline';
+    src: url('../components/fonts/NewPanamSkylineTrial-Regular.otf') format('truetype');
+}
+
+:root {
+    --colorsectiontext: #333; /* Color de texto de la sección */
+}
+
+
+.nosotros-section {
+    padding: 2rem;
+    background-color: #5a4d4d00;
+}
+
+
+.nosotros-content {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    color: var(--colorsectiontext);
+}
+
+.text-container h2 {
+    font-family: 'NewPanamSkyline', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Agregar un margen inferior al H2 para reducir el espacio */
+    color: var(--colorsectiontext);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 1.4rem;
+    color: var(--colorsectiontext);
+    font-family: 'NewPanamSkyline', sans-serif;
+}
+
+
+
+
+/* Estilos para el div horizontal */
+.horizontal-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Centrar horizontalmente el contenido a la derecha */
+    align-items: flex-start;
+    /* Centrar verticalmente el contenido */
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.horizontal-div h2 {
+    font-family: 'NewPanamSkyline', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Agregar un margen inferior al H2 para reducir el espacio */
+    color: var(--colorsectiontext);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.horizontal-div p {
+    font-size: 1.4rem;
+    color: var(--colorsectiontext);
+    margin-top: 0.5rem;
+    font-family: 'NewPanamSkyline', sans-serif;
+}
+
+
+.orange-line {
+    width: 100px; 
+    height: 16px; 
+    background-color: #8c8494; 
+    margin: 8px 0; 
+    border-radius: 5px;
+}
+
+
+@media (max-width: 480px) {
+
+    .nosotros-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .text-container {
+        margin-top: 1rem;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .text-container h2 {
+        margin-bottom: 0.5rem;
+        font-size: 48px;
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+    }
+
+    .horizontal-div h2 {
+        font-size: 48px;
+    }
+
+    .horizontal-div p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=League+Spartan:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --font-LeagueSpartan: 'League Spartan', sans-serif;
+  --color-white-primary: #d0d2da;
+  --color-white-secondary: #e7eaf7;
+  --color-white-disbanded: #ffffff75;
+  --color-purple-primary: #a0827e;
+  --color-purple-secondary: #6e6177;
+  --color-black-primary: #131313;
+  --color-black-secondary: #14171e;
+  --color-black-disbanded: #393d4762;
+  --color-shadow-purple: #928fb18f;
+}
+
+
+
+.background-image-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.formulario {
+  height: 100%;
+  width: 500px;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  border-radius: 20px;
+  background: #1A1E25;
+}
+
+.formulario-container {
+  padding: 20px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 8%;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-white-primary);
+}
+
+.form-input {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  color: var(--color-white-primary);
+}
+
+.form-input:nth-child(4) {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.form-input label {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  font-family: var(--font-LeagueSpartan);
+  font-size: 1em;
+  pointer-events: none;
+  transition: all 0.5s;
+  color: var(--color-white-primary);
+}
+
+.form-input:nth-child(4) label {
+  top: 8%;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+  background: transparent;
+  border-radius: 5px;
+  border: 0;
+  font-family: var(--font-LeagueSpartan);
+  font-size: 1em;
+  transition: all 0.5s;
+  background: var(--color-black-disbanded);
+  color: var(--color-white-primary);
+}
+
+.form-input textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  padding-top: 10px;
+
+}
+
+
+.form-input input:focus,
+.form-input textarea:focus,
+.form-input input:valid,
+.form-input textarea:valid {
+  outline: none;
+  border: 1px solid var(--color-purple-primary);
+  background: transparent;
+}
+
+.form-input input:focus~label,
+.form-input textarea:focus~label,
+.form-input input:valid~label,
+.form-input textarea:valid~label {
+  top: -20%;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  margin-left: 5px;
+  padding: 0 10px 0 10px;
+  border-radius: 4px;
+  background: var(--color-purple-primary);
+  color: var(--color-white-primary);
+  border-left: 1px solid var(--color-purple-primary);
+  border-right: 1px solid var(--color-purple-primary);
+}
+
+.form-input textarea:focus~label,
+.form-input textarea:valid~label {
+  top: -5%;
+}
+
+.form-contact button {
+  align-self: flex-start;
+}
+
+.frame-form ul {
+  display: flex;
+  width: 80%;
+  height: 15%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.frame-form ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 64px;
+}
+
+.frame-form ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 2.1em;
+  transition: all 0.5s;
+  color: var(--color-white-primary);
+  background: var(--color-white-disbanded);
+}
+
+.frame-form ul li a:hover {
+  border: 1px solid var(--color-purple-primary);
+  box-shadow: 0 0 5px var(--color-purple-primary);
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #515052;
+  box-shadow: #afadc08f;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:after {
+  background: transparent;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  transform: scale(0.1);
+  z-index: 1;
+}
+
+.btn:hover:after {
+  transform: scale(1);
+}
+
+.btn span {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  line-height: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 2;
+  color: #f4f6ff;
+  stroke: #f4f6ff;
+}
+
+.btn span:nth-child(2) {
+  display: none;
+}
+
+
+.btn span:nth-child(2) svg {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn:hover::after {
+  background: #868592;
+  box-shadow: #7171728f;
+}
+
+
+.btn:hover span:nth-child(1) {
+  display: none;
+}
+
+.btn:hover span:nth-child(2) {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .formulario {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .form-input {
+    height: 30px;
+  }
+
+  .form-input label {
+    font-size: 0.9em;
+  }
+
+  .form-contact button {
+    font-size: 16px;
+  }
+}

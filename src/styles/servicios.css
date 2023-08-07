@@ -1,0 +1,202 @@
+.servicios-section {
+    padding: 2rem;
+    background-color: #1A1E25;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-prefix {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'NewPanamSkyline', sans-serif;
+    margin-right: 0.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}
+
+.header-title {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'NewPanamSkyline', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+}
+
+.servicio-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+}
+
+.servicio-item {
+    font-family: 'NewPanamSkyline', sans-serif;
+    display: inline-block;
+    text-align: left;
+    padding: 1.5rem;
+    background-color: #cfcdcd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(224, 208, 208, 0.1);
+    margin: 1rem;
+    max-width: 300px;
+    margin-top: 10rem;
+}
+
+.servicio-item p {
+    font-size: 1.2rem;
+    max-height: 3.6em;
+    overflow: hidden;
+}
+
+.servicio-item.expanded p {
+    max-height: none;
+}
+
+.servicio-item i {
+    font-family: 'NewPanamSkyline', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.servicio-item.expanded h3 {
+    font-family: 'NewPanamSkyline', sans-serif;
+    margin-bottom: 0.5rem;
+
+    .custom-button {
+        font-family: 'NewPanamSkyline', sans-serif;
+        color: #fff;
+        background-color: #474a50;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    .custom-button:hover {
+        background-color: #6f6f70;
+    }
+
+
+    @media (min-width: 992px) {
+        .servicios-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .servicio-item {
+            width: calc(25% - 2rem);
+            margin: 1rem;
+            margin-top: 8rem;
+            border-radius: 20px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .servicios-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-family: 'NewPanamSkyline', sans-serif;
+
+        }
+
+        .header-prefix {
+            font-size: 2rem;
+        }
+
+        .servicio-item {
+            width: calc(40% - 2rem);
+        }
+    }
+
+    /* Estilos para pantallas pequeñas (hasta 480px) */
+    @media (max-width: 480px) {
+        .header-prefix {
+            font-size: 1rem;
+            color: #fff;
+            font-family: 'NewPanamSkyline', sans-serif;
+            margin-right: 0.5rem;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+        }
+
+        .header-title {
+            font-size: 1rem;
+            color: #fff;
+            font-family: 'NewPanamSkyline', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+        .servicio-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .servicio-item {
+            font-family: 'NewPanamSkyline', sans-serif;
+            display: inline-block;
+            text-align: left;
+            padding: 1.5rem;
+            background-color: #cfcdcd;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(224, 208, 208, 0.1);
+            margin: 1rem;
+            max-width: 300px;
+            margin-top: 3rem;
+        }
+
+        .servicio-item p {
+            font-size: 1.2rem;
+            max-height: 3.8em;
+            overflow: hidden;
+        }
+
+        .servicio-item.expanded p {
+            max-height: none;
+        }
+
+        .servicio-item.expanded h3 {
+            font-family: 'NewPanamSkyline', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .custom-button {
+            font-family: 'NewPanamSkyline', sans-serif;
+            color: #fff;
+            background-color: #695b66;
+            border: none;
+            border-radius: 5px;
+            padding: 0.75rem 1rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .custom-button:hover {
+            background-color: #9eb6cf;
+        }
+    }
+}
