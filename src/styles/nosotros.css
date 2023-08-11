@@ -4,7 +4,7 @@
 }
 
 :root {
-    --colorsectiontext: #333; /* Color de texto de la sección */
+    --colorsectiontext: #333; 
 }
 
 
@@ -37,7 +37,7 @@
 .text-container h2 {
     font-family: 'NewPanamSkyline', sans-serif;
     margin-top: 0;
-    margin-bottom: 0.5rem; /* Agregar un margen inferior al H2 para reducir el espacio */
+    margin-bottom: 0.5rem; 
     color: var(--colorsectiontext);
     font-size: 60px;
     font-weight: bold;
@@ -52,14 +52,11 @@
 
 
 
-/* Estilos para el div horizontal */
 .horizontal-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* Centrar horizontalmente el contenido a la derecha */
     align-items: flex-start;
-    /* Centrar verticalmente el contenido */
     background-color: #f2f2f2;
     padding: 1rem;
     margin-top: 2rem;
@@ -68,7 +65,7 @@
 .horizontal-div h2 {
     font-family: 'NewPanamSkyline', sans-serif;
     margin-top: 0;
-    margin-bottom: 0.5rem; /* Agregar un margen inferior al H2 para reducir el espacio */
+    margin-bottom: 0.5rem; 
     color: var(--colorsectiontext);
     font-size: 60px;
     font-weight: bold;
