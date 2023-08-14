@@ -31,7 +31,7 @@
   left: 5%;
   transform: translateY(-50%);
   color: var(--textColorinicio);
-  font-size: 5rem;
+  font-size: 4.4rem;
 
 }
 
@@ -42,7 +42,7 @@
   left: 5%;
   transform: translateY(-50%);
   color: var(--textColorinicio);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .custom-button-contactanos {
