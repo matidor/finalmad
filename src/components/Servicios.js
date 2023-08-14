@@ -15,7 +15,7 @@ const Servicios = () => {
     };
 
     return (
-        <div className="servicios-section">
+        <div id='servicios' className="servicios-section">
             <div className="header-prefix">02/</div>
             <div className="header-title">NUESTROS SERVICIOS</div>
             {serviciosData.map((servicio, index) => (
@@ -30,7 +30,7 @@ const Servicios = () => {
                                 : servicio.description}
                     </p>
 
-                    <button className='custom-button' onClick={() => toggleExpand(index)}>
+                    <button className='custom-button-servicios' onClick={() => toggleExpand(index)}>
                         {index === expandedIndex ? 'Cerrar' : 'Leer más'}
                     </button>
                 </div>

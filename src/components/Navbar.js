@@ -20,12 +20,12 @@ function Navbar() {
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+        <button className="nav-btn nav-close-btn" title="abrir en elementos" onClick={showNavbar}>
           <FaTimes />
         </button>
       </nav>
       <button
-        className="nav-btn"
+        className="nav-btn" title="Cerrar navegación"
         onClick={showNavbar}>
         <FaBars />
       </button>

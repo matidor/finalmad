@@ -31,6 +31,8 @@ const Contacto = () => {
       <div className="background-image-contact" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="formulario-container">
           <div className="formulario">
+          <div className="message-container">
+          <h2 className="texto-mensaje">Déjanos un mensaje</h2>
             <form action="" className="form-contact" onSubmit={handleSubmit}>
               <div className="form-input">
                 <input
@@ -90,6 +92,7 @@ const Contacto = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
