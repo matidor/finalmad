@@ -55,20 +55,24 @@
   color: var(--textColorinicio);
   font-size: 24px;
   border: 1px solid #fff;
-  border-radius: 0px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-
-.contact-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.custom-button-contactanos:hover {
+  color: var(--hoverTextColor); /* Cambia esto al color que desees */
+  border-color: var(--hoverBorderColor); /* Cambia esto al color que desees */
 }
 
-.contact-button span {
+.custom-button-contactanos.custom-button-contactanos {
+  background-color: var(--hoverTextColor);
+}
+
+.custom-button-contactanos span {
   margin-right: 5px;
 }
 
-.contact-button svg {
+.custom-button-contactanos svg {
   vertical-align: middle;
 }
 
@@ -105,7 +109,7 @@
 
 .whatsapp-container {
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   right: 10px;
 }
 

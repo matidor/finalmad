@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowRight, FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope, FaArrowUp } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope, FaArrowUp } from 'react-icons/fa';
 import fondo from '../components/assets/fondo.svg';
 import '../styles/mainsection.css';
 
@@ -53,6 +53,9 @@ const MainSection = () => {
         </a>
         <a href="https://www.facebook.com/MadArquitectura.estudio" target="_blank" rel="noopener noreferrer">
           <span className="social-icon"><FaFacebook /></span>
+        </a>
+        <a href="https://www.linkedin.com/in/maximiliano-andres-doro-b52a48111/" target="_blank" rel="noopener noreferrer">
+          <span className="social-icon"><FaLinkedin /></span>
         </a>
       </div>
       <div className="whatsapp-container" title='abrir-whatsapp-bussines'>

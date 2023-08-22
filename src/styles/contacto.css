@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=League+Spartan:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --font-LeagueSpartan: 'League Spartan', sans-serif;
   --color-white-primary: #d0d2da;
   --color-white-secondary: #e7eaf7;
   --color-white-disbanded: #ffffff75;
@@ -264,6 +263,25 @@
   display: block;
 }
 
+.message-container {
+  position: relative;
+}
+
+.mensaje-enviado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: var(--color-white-primary);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
 
 @media (max-width: 480px) {
   .formulario {
